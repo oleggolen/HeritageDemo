@@ -14,6 +14,7 @@ public:
     Rectangle();
     unsigned long long int perimeter() const;
     unsigned long long int area() const;
+    virtual void print(ostream& stream) const;
 
 };
 ostream& operator<<(ostream& stream, const Rectangle& rectangle);

@@ -3,6 +3,7 @@
 #include <ostream>
 using namespace std;
 class Employee{
+
     char* _firstName;
     char* _familyName;
     char _middleInitial;
@@ -18,7 +19,7 @@ public:
     inline unsigned short getDepartment() const;
     void setDepartment(unsigned short department);
     ~Employee();
-    void print(ostream& stream) const;
+    virtual void print(ostream& stream) const;
 };
 ostream &operator<<(ostream &os, const Employee &employee);
 #endif

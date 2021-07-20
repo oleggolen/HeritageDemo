@@ -41,7 +41,6 @@ void Employee::print(ostream &stream) const
     stream << "Name: " << getFirstName() << " " << getMiddleInitial() << ". " << getFamilyName() << endl;
     stream << "Department: " << getDepartment();
 }
-
 ostream &operator<<(ostream &os, const Employee &employee)
 {
     employee.print(os);

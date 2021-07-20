@@ -7,6 +7,7 @@ class Square : public Rectangle{
 public:
     Square();
     Square(unsigned  int a);
+    void print(ostream& stream) const override;
 
 };
 ostream& operator<<(ostream& stream,const Square& square);

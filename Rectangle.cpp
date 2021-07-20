@@ -33,7 +33,14 @@ unsigned long long int Rectangle::perimeter() const
 {
     return 2*(_a+_b);
 }
+
+void Rectangle::print(ostream &stream) const
+{
+    stream << "Rectangle: " << _a << " " << _b;
+}
+
 ostream& operator<<(ostream& stream, const Rectangle& rectangle)
 {
-    return stream << "Rectangle: " << rectangle.getA() << " " << rectangle.getB();
+    rectangle.print(stream);
+    return stream;
 }

@@ -7,7 +7,7 @@ class Manager : public Employee  {
     unsigned short int _level;
 public:
     explicit Manager(const char *firstName, const char *familyName, char middleInitial, unsigned short department, unsigned short int level);
-    void print(ostream& stream) const ;
+    void print(ostream& stream) const override;
     inline unsigned short getLevel() const;
     void setLevel(unsigned short level);
 };
